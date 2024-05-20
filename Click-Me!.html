@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+
+    <body>
+        <style>
+            body
+            {
+                background-image: url(https://media.tenor.com/VuaGhS3fkBUAAAAC/abstract-black.gif);
+                background-attachment: fixed;
+
+            }
+        </style>
+        <style>
+            #maxwell
+            {
+                margin-right: 20px;
+            }
+        </style>
+
+        <script>//This code changes the background and text color of the "ranbow"//
+         var txt = 0;
+         var bg = 0;
+         function divchange()
+         {
+          var divtag = document.getElementById("myButton");
+          var bgcolor = ["white","red","white","green","white","blue","black","orange","black","white","black","yellow"];
+          var txtcolor = ["red","white","green","white","blue","white","orange","black","white","black","yellow","black"];
+          divtag.style.backgroundColor = bgcolor[bg];
+          divtag.style.color = txtcolor [txt];
+          bg = (bg + 1)%bgcolor.length;
+          txt = (txt + 1)%txtcolor.length;
+         }
+          setInterval (divchange,1000);
+        </script>
+
+        <script>
+    // Define an array of links
+    const links = [ 'http://endless.horse/', 'https://theuselessweb.com/', 'https://www.lomando.com/main.html', 'https://www.youtube.com/watch?v=cSQTZoZPJzs', 'http://octagon.lhohq.info/exploit-nomophobia.html', 'http://111111111111111111111111111111111111111111111111111111111111.com/', 'https://theuselessweb.site/ducksarethebest.com/', 'https://theuselessweb.site/ducksarethebest.com/', 'https://zombo.com/', 'http://eelslap.com/', 'https://cat-bounce.com/', 'https://procatinator.com/', 'http://www.staggeringbeauty.com/', 'https://www.pornhub.com/', 'http://wwwwwwwww.jodi.org/betalab/rain/digi3.html', 'https://papertoilet.com/', 'https://www.omfgdogs.com/', 'https://www.google.com/', 'https://hackertyper.com/', 'https://longdogechallenge.com/', 'https://www.trashloop.com/', 'https://www.mapcrunch.com/'];
+
+    // Initialize a counter to keep track of which link to open next
+    let counter = 0;
+
+    // Add an event listener to the button
+    document.addEventListener('DOMContentLoaded', function() {
+      document.getElementById('myButton').addEventListener('click', function() {
+        // Open a new window with the next link in the array
+        window.open(links[counter]);
+
+        // Increment the counter
+        counter++;
+
+        // If the counter exceeds the number of links in the array, reset it to 0
+        if (counter >= links.length) {
+          counter = 0;
+          window.location.replace("404.html");
+        }
+      });
+    });
+            function leave()
+            {
+                window.open("http://octagon.lhohq.info/exploit-nomophobia.html", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=400,height=400");
+            }
+
+        </script>
+        <script>
+            function playMusic() {
+    var music = document.getElementById("music");
+    music.play();
+}
+
+        </script>
+
+
+        <div class="ctr">
+            <button class="movingbutton" id="myButton"><h2><a onmouseleave="leave()" onclick="playMusic()">Click Here to Disable</a></h2></button>
+            <audio id="music" src="Peaceful-Song.ogg"></audio>
+        </div>
+        <div>
+            <span id="main-message">Your system is infected with a Virus</span>
+            <span><img src="https://media.tenor.com/QjNaETDi76cAAAAC/ip-i-have-your-ip-address.gif" style="width:auto"></span>
+            <span id="maxwell"><img src="https://media.tenor.com/dcpZz7CEJWEAAAAC/spinning-cat-maxwell.gif"></span>
+            <span class="right-span"><img src="https://media.tenor.com/ldCfECh22UUAAAAd/breaking-bad-walter.gif"></span>
+        </div>
+        <div>
+            <span><a href="https://dailyverses.net/random-bible-verse" target="_blank"><img src="https://media.tenor.com/ydwXkXUFhaIAAAAM/hot-single.gif"></a></span>
+            <span><a href="https://www.youtube.com/watch?v=l60MnDJklnM" target="_blank"><img src="https://media.tenor.com/dOYqT1gdLFIAAAAM/speed-date-com-add.gif"></a></span>
+
+        <script>
+            var b = document.querySelector(".movingbutton");
+            b.addEventListener("click",change);
+  
+             function change()
+           {
+            let i =Math.abs(Math.floor(Math.random()*window.innerWidth-55))
+            let j = Math.abs(Math.floor(Math.random()*window.innerHeight-21));
+            console.log('here' , i ,j , b.style.left , b.style.top);
+            b.style.left = i+'px';
+            b.style.top = j + "px";
+           }
+          </script>
+        
+        <style>
+            .movingbutton
+            {
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+                position: absolute;
+                cursor: pointer;
+                left: 45%;
+                top: 50%;
+                z-index: 9999;
+            }
+
+            .ctr
+            {
+                width: 100%;
+                height: 100%;
+                z-index: 9999;
+            }
+
+            body
+            {
+                width: 100%;
+            }
+
+            .right-span
+            {
+                position: fixed;
+                top: 0;
+                right: 60px;
+                margin-left: 10px;
+                width: 30%;
+            }
+
+            #main-message
+            {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 30px;
+                color: red;
+                text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+                position: relative;
+            }
+        </style>
+    </body>
+</html>
